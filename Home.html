@@ -6,7 +6,34 @@
     <title>For u - Home </title>
     <link rel="stylesheet" href="Home.css">
     <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
-</head>
+</head> 
+
+<script>
+  const requiredPages = [
+    'Home.html',
+    'Poemas.html',
+    'Desenhos.html',
+    'Msc.html',
+    'NssHistória.html' // adicione todos os nomes dos arquivos usados no menu
+  ];
+
+  // Marca a página atual como visitada
+  const currentPage = location.pathname.split('Finais.html').pop(); // pega só o nome do arquivo
+  const visited = JSON.parse(localStorage.getItem('visitedPages') || '{}');
+  visited[currentPage] = true;
+  localStorage.setItem('visitedPages', JSON.stringify(visited));
+
+  // Verifica se todas foram visitadas
+  const allVisited = requiredPages.every(page => visited[page]);
+
+  // Se sim, e ainda não foi redirecionado, redireciona
+  if (allVisited && !localStorage.getItem('redirectDone')) {
+    localStorage.setItem('redirectDone', 'true'); // impede redirecionamentos futuros
+    window.open('https://www.exemplo.com', '_blank'); // coloque aqui o link final
+  }
+</script>
+
+
 <body>
     <header>
         <h1>Oieee! Como c tá?</h1>
@@ -32,11 +59,11 @@
         <h3><b>Metas Pro nosso relacionamento</b></h3>
         <div id="A">
             <h4>Plano <b>A</b></h4>
-            <p>2030: Nosso casamento<br> 2031: Vamos ter nossa casa própria <br> 2037: Vamos pra fora do Brasil e morar no EUA <br> 2039: Vamos viajar pro Japão e morar lá <br> 2040: Vamos ter 4 cachorrinhos, 4 gatos, 3 passaros e 1 coelho <br> 2045: Teremos uma mansão fodida d boa no pico mais alto do prédio mais caro cm os melhores carros e um casamento feliz e saudavel</p>
+            <p><u>2030</u>: Nosso casamento<br> <u>2031</u>: Vamos ter nossa casa própria <br> <u>2037</u>: Vamos pra fora do Brasil e morar no EUA <br> <u>2039</u>: Vamos viajar pro Japão e morar lá <br> <u>2040</u>: Vamos ter 4 cachorrinhos, 4 gatos, 3 passaros e 1 coelho <br> <u>2045</u>: Teremos uma mansão fodida d boa no pico mais alto do prédio mais caro cm os melhores carros e um casamento feliz e saudavel</p>
         </div>
         <div id="B">
             <h4>Plano <b>B</b></h4>
-            <p>2030: Nosso casamento <br> 2035: Vou pegar vc e vamos pros EUA <br> 2036: Vamos ter uma mansão fodida d linda, mts carros e motos <br> 2037: Vamos ter 4 cachorros, 4 gatos, 3 passaros e 1 coelho <br> 2040: Vamos ser felizes pra sempre fazendo viagens frequêntes pro Japão</p>
+            <p><u>2030</u>: Nosso casamento <br> <u>2035</u>: Vou pegar vc e vamos pros EUA <br> <u>2036</u>: Vamos ter uma mansão fodida d linda, mts carros e motos <br> <u>2037</u>: Vamos ter 4 cachorros, 4 gatos, 3 passaros e 1 coelho <br> <u>2040</u>: Vamos ser felizes pra sempre fazendo viagens frequêntes pro Japão</p>
         </div>
         </p>
     </div>
