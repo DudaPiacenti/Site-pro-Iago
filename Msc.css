@@ -40,7 +40,7 @@ h1{
     width: 200px;
     border-radius: 10px;
 }
-h5, p {
+p {
     background-color: #fec3ca;
     text-align: center;
     margin: 10px 0 10px 20px;
@@ -57,4 +57,11 @@ h5, p {
     text-align: center;
     margin-left: 500px;
     margin-right: 500px;
+}
+h5{
+    background-color: #c6d998;
+    text-align: center;
+    margin: 10px 0 10px 20px;
+    padding: 5px;
+    width: 200px;   
 }
