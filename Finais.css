@@ -12,3 +12,37 @@ aside{
     margin-right: 400px;
     text-align: center;
 }
+.heart-button {
+  background-color: #ff8ebf;
+  border: none;
+  padding: 20px 40px;
+  font-size: 18px;
+  color: white;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+.heart-button:hover {
+    background-color: #ff5d9e;
+}
+.audio-button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #d6e8b5;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.audio-button:hover {
+    background-color: #d6e8b5
+}
+.audios{
+    margin-left: 1150px;
+    margin-right: 10px;
+    background-color: #badf93;
+    border-radius: 10px;
+    text-align: center;
+}

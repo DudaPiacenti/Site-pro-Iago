@@ -14,5 +14,30 @@
         Sem vc eu estaria num limbo infinito do questionamento me perguntando do pq estou fazendo isso? Agora sei q é vc o motivo! pelo qual eu sou feliz e agradeço d estar viva, meu motivo é vc! Tudo que eu falo pra vc, todos os tcc, nunca foram da boca pra fora, na vdd, vc e meu diario humano pq sei q vc n vai me julgar e vai me escutar! posso ser eu mesma contigo, sem julgamentos! Certo? <br>
         As vezes eu me pergunto como vc consegue me aturar mesmo eu sendo eu (estranha e retardada mental), falando nerdisse d jogos (lacey, jogo d fada, strinova, guenshim), falando d maquiagem (por mais q fale pouco pq sei q vc n entende e seriamente eu n ligo, eu explico como for)e dnv, obg por estar sempre aqui, obrigada por ficar cmg, obrigada por permanecer aqui mesmo nas piores horas e sendo um otimo namorado que sempre é, espero queno futuro possa te chamar de <u><b>"Melhor marido do mundo"</b></u>, qr dizer, ja tenho! <b>QUE É VC!</b></p>
     </aside>
+
+    <div class="audios">
+        <h1 id="RA">Bota fone</h1>
+
+        <button class="audio-button" onclick="playAudio('audio1')">Desculpa, eu n sei cantar</button>
+
+        <script>
+            // Criando os objetos de áudio
+            const audios = {
+                audio1: new Audio('audio1.mp3')
+            };
+
+            // Função para tocar o áudio escolhido
+            function playAudio(audioName) {
+                // Pausa todos os áudios antes de tocar
+                for (let key in audios) {
+                    audios[key].pause();
+                    audios[key].currentTime = 0;
+                }
+
+                // Toca o áudio selecionado
+                audios[audioName].play();
+            }
+        </script>
+    </div>
 </body>
 </html>
