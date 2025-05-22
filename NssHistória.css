@@ -1,30 +1,35 @@
 header {
-    background-color: #f163a8;
+    background-color: #fec3ca;
     border-radius: 10px;
     text-align: center;
     padding: 20px;
 }
 nav a {
-    color: #c94c78;
+    color: #73bc4e;
     text-decoration: none;
     margin: 0 10px;
     font-weight: bold;
+}
+h4{
+    margin-left: 10px 0;
+    color: #aad197;
 }
 nav a:hover {
     text-decoration: underline;
 }
 h1, p {
     margin: 10px 0;
-}
-h4{
-    margin-left: 10px 0;
+    padding: 10px;
 }
 body{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #f18fc0;
+    background-color: #d6e8b5;
     margin: 0;
     padding: 0;
-    color: rgb(255, 255, 255);
+    color: white;
+}
+h1{
+    color: #ffdbe0;
 }
 .timeline-container {
   max-width: 800px;
@@ -33,7 +38,7 @@ body{
 }
 h1 {
   text-align: center;
-  color: #000000;
+  color: #ffffff;
   font-size: 2.5em;
   margin-bottom: 40px;
 }
@@ -56,20 +61,37 @@ h1 {
   top: 0;
   width: 20px;
   height: 20px;
-  background-color: #df78ac;
-  border: 2px solid #cc689a;
+  background-color: #fec3ca;
+  border: 2px solid #ffdbe0;
+  border-radius: 50%;
+}
+
+.event2::before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #73bc4e;
+  border: 2px solid #aad197;
   border-radius: 50%;
 }
 
 .content {
-  background: #ff69b4;
+  background-color: #fec3ca;
   padding: 15px 20px;
   border-radius: 10px;
   box-shadow: 2px 2px 8px rgba(0,0,0,0.05);
 }
-
+.content2 {
+  background-color: #aad197;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.05);
+}
 .content h2 {
   margin-top: 0;
   font-size: 1.3em;
-  color: #a42153;
+  background-color: #fec3ca;
 }

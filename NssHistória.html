@@ -7,33 +7,6 @@
     <link rel="stylesheet" href="NssHistória.css">
     <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
 </head>
-
-<script>
-  const requiredPages = [
-    'Home.html',
-    'Poemas.html',
-    'Desenhos.html',
-    'Msc.html',
-    'NssHistória.html' // adicione todos os nomes dos arquivos usados no menu
-  ];
-
-  // Marca a página atual como visitada
-  const currentPage = location.pathname.split('Finais.html').pop(); // pega só o nome do arquivo
-  const visited = JSON.parse(localStorage.getItem('visitedPages') || '{}');
-  visited[currentPage] = true;
-  localStorage.setItem('visitedPages', JSON.stringify(visited));
-
-  // Verifica se todas foram visitadas
-  const allVisited = requiredPages.every(page => visited[page]);
-
-  // Se sim, e ainda não foi redirecionado, redireciona
-  if (allVisited && !localStorage.getItem('redirectDone')) {
-    localStorage.setItem('redirectDone', 'true'); // impede redirecionamentos futuros
-    window.open('https://www.exemplo.com', '_blank'); // coloque aqui o link final
-  }
-</script>
-
-
 <body>
   <header>
         <h1>Oieee! Como c tá?</h1>
@@ -43,7 +16,8 @@
             <a href="Poemas.html" target="_blank">Poemas</a> |
             <a href="Desenhos.html" target="_blank">Desenhos</a> |
             <a href="Msc.html" target="_blank">Músicas que te lembram</a> |
-            <a href="NssHistória.html" target="_blank">Nossa História</a> 
+            <a href="NssHistória.html" target="_blank">Nossa História</a> | 
+            <a href="Finais.html" target="_blank">Finais...</a>
         </nav>
     </header>
   <div class="timeline-container">
@@ -57,8 +31,8 @@
         </div>
       </div>
 
-      <div class="event">
-        <div class="content">
+      <div class="event2">
+        <div class="content2">
           <h2>Ato 2: Nossa amizade</h2>
           <p>Os dois n tinham coragem de se declarar um pro outro, ent ficamos 3 anos sendo amigos q no fundo estavam se flertando, MAIS OS DOIS LERDOS N VIAM! Lembro qnd vc me convidava pra 'sinuquinha', vr chat, a gente jogava td dia! vc até me camou pra epoca ANTIGA do the void!</p>
         </div>
@@ -71,8 +45,8 @@
         </div>
       </div>
 
-      <div class="event">
-        <div class="content">
+      <div class="event2">
+        <div class="content2">
           <h2>Ato 4: Nova história</h2>
           <p>Começamos básico! "Quando fizer 30 anos, vamos nos casar"... depois foi para: "Bora ficar?", Logo foi... "Amizade Colorida né" e esses periodos mostrou como vc poderia ser amoroso cmg, seria o melhor que pode, fez desenho pra mim, tanto q esta na página <a href="Desenhos.html">Desenhos</a> lá em cima! Era da forma que eu queria, da forma q eu pedi, do jeitinho q eu desejei.</p>
         </div>

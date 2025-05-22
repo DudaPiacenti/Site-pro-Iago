@@ -7,33 +7,6 @@
     <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="Desenhos.css">
 </head>
-
-<script>
-  const requiredPages = [
-    'Home.html',
-    'Poemas.html',
-    'Desenhos.html',
-    'Msc.html',
-    'NssHistória.html' // adicione todos os nomes dos arquivos usados no menu
-  ];
-
-  // Marca a página atual como visitada
-  const currentPage = location.pathname.split('Finais.html').pop(); // pega só o nome do arquivo
-  const visited = JSON.parse(localStorage.getItem('visitedPages') || '{}');
-  visited[currentPage] = true;
-  localStorage.setItem('visitedPages', JSON.stringify(visited));
-
-  // Verifica se todas foram visitadas
-  const allVisited = requiredPages.every(page => visited[page]);
-
-  // Se sim, e ainda não foi redirecionado, redireciona
-  if (allVisited && !localStorage.getItem('redirectDone')) {
-    localStorage.setItem('redirectDone', 'true'); // impede redirecionamentos futuros
-    window.open('https://www.exemplo.com', '_blank'); // coloque aqui o link final
-  }
-</script>
-
-
 <body>
     <header>
         <h1>Oieee! Como c tá?</h1>
